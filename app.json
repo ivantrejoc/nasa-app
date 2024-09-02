@@ -4,10 +4,10 @@
     "slug": "nasa-apod",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/nasa-logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/nasa-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
