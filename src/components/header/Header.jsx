@@ -15,7 +15,6 @@ const Header = () => {
     </View>
   );
 };
-export default Header;
 
 const styles = StyleSheet.create({
   container: {
@@ -39,3 +38,6 @@ const styles = StyleSheet.create({
     height: 55
   }
 });
+
+export default Header;
+

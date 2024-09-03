@@ -24,7 +24,7 @@ export default PodCard;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "rgba(105, 153, 238, 0.6)",
-    flex: 0.45,
+    flex: 1,
     alignItems: "center",
     justifyContent: "center",
     marginVertical: 16,
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     width: "90%",
-    height: "50%",
+    height: "60%",
     alignItems: "center",
     borderWidth: 2,
     borderColor: "#FFFFFF",
