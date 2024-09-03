@@ -8,7 +8,7 @@ const LastFiveImages = ({ data }) => {
       <ScrollView style={styles.content}>
         {data?.map((item) => {
           return (
-            <PostImage key={item.index} title={item.title} date={item.date} />
+            <PostImage key={item.title} title={item.title} date={item.date} />
           );
         })}
       </ScrollView>
