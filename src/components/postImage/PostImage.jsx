@@ -1,6 +1,12 @@
 import { StyleSheet, Text, View, Button } from 'react-native'
+import { useNavigation } from '@react-navigation/native';
 
-const PostImage = ({title, date}) => {
+const PostImage = ({title, date, image, explanation}) => {
+  const { navigate } = useNavigation();
+  
+  const handlePress = () => {
+    navigate("Detail", {title, date, image, explanation});
+  };
   return (
     <View style={styles.container}>    
     <View style={styles.textContainer}>
@@ -10,8 +16,7 @@ const PostImage = ({title, date}) => {
     <View style={styles.buttonContainer}>
       <Button
         title="View"
-        onPress={() => console.log("Learn More button pressed")}
-      />
+        onPress={handlePress}/>
     </View>
   </View>
   )

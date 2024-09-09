@@ -8,7 +8,7 @@ const LastFiveImages = ({ data }) => {
       <ScrollView style={styles.content}>
         {data?.map((item) => {
           return (
-            <PostImage key={item.title} title={item.title} date={item.date} />
+            <PostImage key={item.title} title={item.title} date={item.date} image={item.hdurl} explanation={item.explanation} />
           );
         })}
       </ScrollView>
@@ -18,7 +18,7 @@ const LastFiveImages = ({ data }) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0.75,
     marginVertical: 8
   },
   title: {

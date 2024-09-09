@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <Header />
-      {pod && <PodCard image={pod.hdurl} title={pod.title} date={pod.date} />}
+      {pod && <PodCard image={pod.hdurl} title={pod.title} date={pod.date} explanation={pod.explanation} />}
       {lastFivePics && <LastFiveImages data={lastFivePics} />}
     </View>
   );
@@ -47,6 +47,7 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "rgba(7,26,93,255)",
     flex: 1,
     paddingHorizontal: 16
   },

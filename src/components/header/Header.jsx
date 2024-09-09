@@ -19,7 +19,8 @@ const Header = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    paddingVertical: 15
   },
   leftContainer: {
     flex: 1,

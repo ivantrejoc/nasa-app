@@ -1,6 +1,12 @@
 import { View, Text, Image, Button, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
-const PodCard = ({ title, image, date }) => {
+const PodCard = ({ title, image, date, explanation }) => {
+  const { navigate } = useNavigation();
+  const handlePress = () => {
+    navigate("Detail", {title, image, date, explanation});
+  };
+ 
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
@@ -11,10 +17,7 @@ const PodCard = ({ title, image, date }) => {
         <Text style={styles.date}>{date}</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <Button
-          title="View"
-          onPress={() => console.log("Learn More button pressed")}
-        />
+        <Button title="View" onPress={handlePress} />
       </View>
     </View>
   );
@@ -24,7 +27,7 @@ export default PodCard;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "rgba(105, 153, 238, 0.6)",
-    flex: 1,
+    flex: 1.3,
     alignItems: "center",
     justifyContent: "center",
     marginVertical: 16,
